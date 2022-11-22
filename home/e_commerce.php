@@ -1,5 +1,97 @@
+<?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
+if (!isset($_GET["id"]) || $_GET["id"]==""){
+header("Location: index.php");
+}
+
+$id = $_GET["id"];
+
+switch ($id) {
+  case '0':
+    $dados["nome"]="Brook";
+    $dados["valor"]="33,00";
+    $dados["transacao"]="avista";
+    $dados["origem"]="Animação Japoneza, One Piece";
+    $dados["descricao"]="Brook é o Músico dos Piratas do Chapéu de Palha. Ele é um esqueleto que os Chapéus de Palha encontraram a bordo de um navio fantasma depois de entrarem no Triângulo Florian. Ele é um usuário de Akuma no Mi que comeu a Yomi Yomi no Mi, o que o torna um pseudo-imortal por causa de seus poderes. ";
+    break;
+    
+  case '1':
+    $dados["nome"]="Luffy";
+    $dados["valor"]="34,00";
+    $dados["transacao"]="avista";
+    $dados["origem"]="Animação Japoneza, One Piece";
+    $dados["descricao"]="Monkey D. Luffy, também conhecido como Luffy Chapéu de Palha ou Chapéu de Palha,[9]é um pirata e o protagonista do anime e mangá One Piece. Ele é o fundador e o capitão do cada vez mais infame e poderoso Piratas do Chapéu de Palha, bem como um de seus principais lutadores.";
+    # code...
+    break;
+      
+  case '2':
+    $dados["nome"]="Franky";
+    $dados["valor"]="35,00";
+    $dados["transacao"]="avista";
+    $dados["origem"]="Animação Japoneza, One Piece";
+    $dados["descricao"]="Franky é o carpinteiro dos Piratas do Chapéu de Palha. Ele é um cyborg de 36 anos de Water 7 e foi introduzido na história como o líder da Família Franky, um grupo de desmantelamento de navios. Ele foi originalmente chamado de Cutty Flam até trocar seu nome original por seu apelido a pedidos de Iceburg para esconder sua identidade.";
+    # code...
+    break;
+        
+  case '3':
+    $dados["nome"]="Sabo";
+    $dados["valor"]="36,00";
+    $dados["transacao"]="avista";
+    $dados["origem"]="Animação Japoneza, One Piece";
+    $dados["descricao"]="Sabo, o Imperador das Chamas, é o chefe de gabinete do Exército Revolucionário, reconhecido como o Nº 2 de toda a organização, sendo este o ranking diretamente abaixo de Monkey D. Dragon, o Comandante Supremo. Ele também é irmão jurado dos infames piratas Portgas D. Ace e Monkey D. Luffy.";
+    # code...
+    break;
+          
+  case '4':
+    $dados["nome"]="Zoro";
+    $dados["valor"]="39,00";
+    $dados["transacao"]="avista";
+    $dados["origem"]="Animação Japoneza, One Piece";
+    $dados["descricao"]="Roronoa Zoro, também conhecido como Caçador de Piratas Zoro, é o combatente dos Piratas do Chapéu de Palha e um ex-caçador de recompensas.Ele foi o primeiro membro a juntar-se à tripulação.[3] Sua fama como mestre espadachim e sua grande força, juntamente com as ações de seu capitão, às vezes levaram os outros a acreditar que ele era o verdadeiro capitão da tripulação antes deste obter sua primeira recompensa, enquanto algumas pessoas acreditam que ele seja o imediato.";
+    # code...
+    break;
+    
+  case '5':
+    $dados["nome"]="Vegeta";
+    $dados["valor"]="27,00";
+    $dados["transacao"]="avista";
+    $dados["origem"]="Animação Japoneza, Dragon Ball Z";
+    $dados["descricao"]="Vegeta IV, ou Príncipe Vegeta é o príncipe da raça Saiyajin e arqui-rival de Goku. Ele é o filho mais velho de Vegeta III, o irmão mais velho de Tarble, o marido de Bulma, o pai de Trunks e Bra, e tataravô de Vegeta Jr. Junto com Goku, Gohan, e Piccolo, ele é facilmente um dos personagens mais prominentes da série, recebendo mais desenvolvimento após ser introduzido do que vários personagens.";
+    # code...
+    break;
+      
+  case '6':
+    $dados["nome"]="Seiya";
+    $dados["valor"]="26,00";
+    $dados["transacao"]="avista";
+    $dados["origem"]="Animação Japoneza, Cavaleiro dos Zodíacos";
+    $dados["descricao"]="Seiya de Pégaso (天馬星座の星矢 Pegasasu no Seiya?) é o titular e principal protagonista do Mangá/Anime Saint Seiya do autor Musami Kurumada e o Cavaleiro de Bronze da constelação de Pégaso do século XX, incumbido com a missão de proteger a deusa Atena nas Guerras Santas no século XX. Caracterizado principalmente por nunca desistir de lutar em qualquer situação, por mais impossível ou difícil que possa parecer, ele também é a reencarnação do Cavaleiro de Bronze Tenma de Pégaso e do Primeiro Pégaso, o primeiro homem a ferir o Deus Hades nos tempos mitológicos.";
+    # code...
+    break;
+        
+  case '7':
+    $dados["nome"]="Meliodas";
+    $dados["valor"]="28,00";
+    $dados["transacao"]="avista";
+    $dados["origem"]="Animação Japoneza, Sete Pecados Capitais";
+    $dados["descricao"]="Meliodas é o líder dos Sete Pecados Capitais, carregando o título de Pecado da Ira do Dragão. Ele é o proprietário do renomado bar Chapéu de Javali, e o principal protagonista da série. O seu Tesouro Sagrado é a Espada Demônio Lostvayne e seu poder é o Full Counter. Ele também já usou o Mandamento do Amor e é o antigo líder dos Dez Mandamentos, um antigo membro do Stigma, e o filho mais velho do Rei Demônio.";
+    # code...
+    break;
+  
+  default:
+    # code...
+    break;
+}
+// var_dump($dados);
+$dados_json = json_encode($dados);
+// var_dump($dados_json);
+?>
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -27,7 +119,7 @@
         <div class="col-md-3 left_col">
           <div class="left_col scroll-view">
             <div class="navbar nav_title" style="border: 0;">
-              <a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>E-Commerce</span></a>
+              <a href="index.php" class="site_title"><i class="fa fa-paw"></i> <span>E-Commerce</span></a>
             </div>
 
             <div class="clearfix"></div>
@@ -43,7 +135,7 @@
               <div class="menu_section">
                 <h3>General</h3>
                 <ul class="nav side-menu">
-                  <li><a href="media_gallery.html"><i class="fa fa-home"></i> Compras </a>
+                  <li><a href="index.php"><i class="fa fa-home"></i> Compras </a>
                     
                   </li>
                 </ul>
@@ -81,10 +173,10 @@
                 <nav class="nav navbar-nav">
                 <ul class=" navbar-right">
                   <li class="nav-item dropdown open" style="padding-left: 15px;">
-                    <a href="javascript:;" class="user-profile dropdown-toggle" aria-haspopup="true" id="navbarDropdown" data-toggle="dropdown" aria-expanded="false">
+                    <a href="#" class="user-profile dropdown-toggle" aria-haspopup="true" id="navbarDropdown" data-toggle="dropdown" aria-expanded="false">
                       <img src="images/img.jpg" alt="">John Doe
                     </a>
-                    <div class="dropdown-menu dropdown-usermenu pull-right" aria-labelledby="navbarDropdown">
+                    <!-- <div class="dropdown-menu dropdown-usermenu pull-right" aria-labelledby="navbarDropdown">
                       <a class="dropdown-item"  href="javascript:;"> Profile</a>
                         <a class="dropdown-item"  href="javascript:;">
                           <span class="badge bg-red pull-right">50%</span>
@@ -92,7 +184,7 @@
                         </a>
                     <a class="dropdown-item"  href="javascript:;">Help</a>
                       <a class="dropdown-item"  href="login.html"><i class="fa fa-sign-out pull-right"></i> Log Out</a>
-                    </div>
+                    </div> -->
                   </li>
   
                   <li role="presentation" class="nav-item dropdown open">
@@ -212,132 +304,54 @@
 
                     <div class="col-md-7 col-sm-7 ">
                       <div class="product-image">
-                        <img src="images/prod-1.jpg" alt="..." />
+                        <img src="images/<?php echo $_GET["id"]?>.jpg" alt="..." />
                       </div>
                       <div class="product_gallery">
                         <a>
-                          <img src="images/prod-2.jpg" alt="..." />
+                        <img src="images/<?php echo $_GET["id"]?>.jpg" alt="..." />
                         </a>
                         <a>
-                          <img src="images/prod-3.jpg" alt="..." />
+                        <img src="images/<?php echo $_GET["id"]?>.jpg" alt="..." />
                         </a>
                         <a>
-                          <img src="images/prod-4.jpg" alt="..." />
+                        <img src="images/<?php echo $_GET["id"]?>.jpg" alt="..." />
                         </a>
                         <a>
-                          <img src="images/prod-5.jpg" alt="..." />
+                          <img src="images/<?php echo $_GET["id"]?>.jpg" alt="..." />
                         </a>
                       </div>
                     </div>
 
                     <div class="col-md-5 col-sm-5 " style="border:0px solid #e5e5e5;">
 
-                      <h3 class="prod_title">LOWA Men’s Renegade GTX Mid Hiking Boots Review</h3>
+                      <h3 class="prod_title"><?php echo $dados["nome"]?></h3>
 
-                      <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terr.</p>
+                      <p><?php echo $dados["descricao"]?>.</p>
+                      <br />
+                      <p><?php echo $dados["origem"]?>.</p>
+                     
                       <br />
 
-                      <div class="">
-                        <h2>Available Colors</h2>
-                        <ul class="list-inline prod_color display-layout">
-                          <li>
-                            <p>Green</p>
-                            <div class="color bg-green"></div>
-                          </li>
-                          <li>
-                            <p>Blue</p>
-                            <div class="color bg-blue"></div>
-                          </li>
-                          <li>
-                            <p>Red</p>
-                            <div class="color bg-red"></div>
-                          </li>
-                          <li>
-                            <p>Orange</p>
-                            <div class="color bg-orange"></div>
-                          </li>
-
-                        </ul>
-                      </div>
-                      <br />
-
-                      <div class="">
-                        <h2>Size <small>Please select one</small></h2>
-                        <ul class="list-inline prod_size display-layout">
-                          <li>
-                            <button type="button" class="btn btn-default btn-xs">Small</button>
-                          </li>
-                          <li>
-                            <button type="button" class="btn btn-default btn-xs">Medium</button>
-                          </li>
-                          <li>
-                            <button type="button" class="btn btn-default btn-xs">Large</button>
-                          </li>
-                          <li>
-                            <button type="button" class="btn btn-default btn-xs">Xtra-Large</button>
-                          </li>
-                        </ul>
-                      </div>
                       <br />
 
                       <div class="">
                         <div class="product_price">
-                          <h1 class="price">Ksh80.00</h1>
-                          <span class="price-tax">Ex Tax: Ksh80.00</span>
+                          <h1 class="price">R$<?php echo $dados["valor"]?></h1>
+                          <!-- <span class="price-tax">Ex Tax: Ksh80.00</span> -->
                           <br>
                         </div>
                       </div>
 
                       <div class="">
-                        <button type="button" class="btn btn-default btn-lg">Add to Cart</button>
-                        <button type="button" class="btn btn-default btn-lg">Add to Wishlist</button>
+                        <button type="button" id="btn_buy"class="btn btn-primary btn-lg">Comprar</button>
+                        
                       </div>
 
-                      <div class="product_social">
-                        <ul class="list-inline display-layout">
-                          <li><a href="#"><i class="fa fa-facebook-square"></i></a>
-                          </li>
-                          <li><a href="#"><i class="fa fa-twitter-square"></i></a>
-                          </li>
-                          <li><a href="#"><i class="fa fa-envelope-square"></i></a>
-                          </li>
-                          <li><a href="#"><i class="fa fa-rss-square"></i></a>
-                          </li>
-                        </ul>
-                      </div>
-
+                      
                     </div>
 
 
-                    <div class="col-md-12">
-
-                      <ul class="nav nav-tabs bar_tabs" id="myTab" role="tablist">
-                        <li class="nav-item">
-                          <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
-                        </li>
-                      </ul>
-                      <div class="tab-content" id="myTabContent">
-                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                          Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher
-                              synth. Cosby sweater eu banh mi, qui irure terr.
-                        </div>
-                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                          Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo
-                              booth letterpress, commodo enim craft beer mlkshk aliquip
-                        </div>
-                        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-                          xxFood truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo
-                              booth letterpress, commodo enim craft beer mlkshk 
-                        </div>
-                      </div>
-
-                    </div>
+                    
                   </div>
                 </div>
               </div>
@@ -347,12 +361,7 @@
         <!-- /page content -->
 
         <!-- footer content -->
-        <footer>
-          <div class="pull-right">
-            Gentelella - Bootstrap Admin Template by <a href="https://colorlib.com">Colorlib</a>
-          </div>
-          <div class="clearfix"></div>
-        </footer>
+        
         <!-- /footer content -->
       </div>
     </div>
@@ -368,5 +377,17 @@
 
     <!-- Custom Theme Scripts -->
     <script src="../build/js/custom.min.js"></script>
+    <script>
+      var dados= <?php echo  $dados_json?>;
+      $( document ).ready(function() {
+        $("#btn_buy").on("click",comprar)
+      });
+      function comprar(){
+        console.log( "id: " + <?php echo  $id?> );
+         console.log(dados);
+      }
+ 
+
+    </script>
   </body>
 </html>

@@ -43,7 +43,7 @@
               <div class="menu_section">
                 <h3>General</h3>
                 <ul class="nav side-menu">
-                  <li><a href="media_gallery.html"><i class="fa fa-home"></i> Compras </a>
+                  <li><a href="index.php"><i class="fa fa-home"></i> Compras </a>
                     
                   </li>
                 </ul>
@@ -213,8 +213,8 @@
                       
                       <div class="col-md-55">
                         <div class="thumbnail">
-                          <div class="image view view-first"  onclick="(window.location='e_commerce.html?id=0&v=33,00')" style="cursor:pointer; display: flex;flex-direction: column ;align-items:center;">
-                            <img style="height: 100%;display: block;" src="images/brook.jpg" alt="image" />
+                          <div class="image view view-first"  onclick="(window.location='e_commerce.php?id=0')" style="cursor:pointer; display: flex;flex-direction: column ;align-items:center;">
+                            <img style="height: 100%;display: block;" src="images/0.jpg" alt="image" />
                             <div class="mask">
                               
                               
@@ -228,8 +228,8 @@
                    
                       <div class="col-md-55">
                         <div class="thumbnail">
-                          <div class="image view view-first"  onclick="(window.location='e_commerce.html?id=1&v=34,00')" style="cursor:pointer; display: flex;flex-direction: column ;align-items:center;">
-                            <img style="height: 100%; display: block;" src="images/luffy.jpg" alt="image" />
+                          <div class="image view view-first"  onclick="(window.location='e_commerce.php?id=1')" style="cursor:pointer; display: flex;flex-direction: column ;align-items:center;">
+                            <img style="height: 100%; display: block;" src="images/1.jpg" alt="image" />
                             <div class="mask">
                               
                               
@@ -242,8 +242,8 @@
                       </div>
                       <div class="col-md-55">
                         <div class="thumbnail">
-                           <div class="image view view-first"  onclick="(window.location='e_commerce.html?id=2&v=35,00')" style="cursor:pointer; display: flex;flex-direction: column ;align-items:center;">
-                            <img style="height: 100%; display: block;" src="images/franky.jpg" alt="image" />
+                           <div class="image view view-first"  onclick="(window.location='e_commerce.php?id=2')" style="cursor:pointer; display: flex;flex-direction: column ;align-items:center;">
+                            <img style="height: 100%; display: block;" src="images/2.jpg" alt="image" />
                             <div class="mask">
                               
                               
@@ -256,8 +256,8 @@
                       </div>
                       <div class="col-md-55">
                         <div class="thumbnail">
-                           <div class="image view view-first"  onclick="(window.location='e_commerce.html?id=3&v=36,00')" style="cursor:pointer; display: flex;flex-direction: column ;align-items:center;">
-                            <img style="height: 100%; display: block;" src="images/sabo.jpg" alt="image" />
+                           <div class="image view view-first"  onclick="(window.location='e_commerce.php?id=3')" style="cursor:pointer; display: flex;flex-direction: column ;align-items:center;">
+                            <img style="height: 100%; display: block;" src="images/3.jpg" alt="image" />
                             <div class="mask">
                               
                               
@@ -270,8 +270,8 @@
                       </div>
                       <div class="col-md-55">
                         <div class="thumbnail">
-                           <div class="image view view-first"  onclick="(window.location='e_commerce.html?id=4&v=39,00')" style="cursor:pointer; display: flex;flex-direction: column ;align-items:center;">
-                            <img style="height: 100%; display: block;" src="images/zoro.jpg" alt="image" />
+                           <div class="image view view-first"  onclick="(window.location='e_commerce.php?id=4')" style="cursor:pointer; display: flex;flex-direction: column ;align-items:center;">
+                            <img style="height: 100%; display: block;" src="images/4.jpg" alt="image" />
                             <div class="mask">
                               
                               
@@ -286,8 +286,8 @@
 
                       <div class="col-md-55">
                         <div class="thumbnail">
-                           <div class="image view view-first"  onclick="(window.location='e_commerce.html?id=5&v=27,00')" style="cursor:pointer; display: flex;flex-direction: column ;align-items:center;">
-                            <img style="height: 100%; display: block;" src="images/veggeta.jpg" alt="image" />
+                           <div class="image view view-first"  onclick="(window.location='e_commerce.php?id=5')" style="cursor:pointer; display: flex;flex-direction: column ;align-items:center;">
+                            <img style="height: 100%; display: block;" src="images/5.jpg" alt="image" />
                             <div class="mask no-caption">
                               
                             </div>
@@ -299,8 +299,8 @@
                       </div>
                       <div class="col-md-55">
                         <div class="thumbnail">
-                           <div class="image view view-first"  onclick="(window.location='e_commerce.html?id=6&v=26,00')" style="cursor:pointer; display: flex;flex-direction: column ;align-items:center;">
-                            <img style="height: 100%; display: block;" src="images/seiya.jpg" alt="image" />
+                           <div class="image view view-first"  onclick="(window.location='e_commerce.php?id=6')" style="cursor:pointer; display: flex;flex-direction: column ;align-items:center;">
+                            <img style="height: 100%; display: block;" src="images/6.jpg" alt="image" />
                             <div class="mask no-caption">
                               
                             </div>
@@ -312,8 +312,8 @@
                       </div>
                       <div class="col-md-55">
                         <div class="thumbnail">
-                           <div class="image view view-first"  onclick="(window.location='e_commerce.html?id=7&v=28,00')" style="cursor:pointer; display: flex;flex-direction: column ;align-items:center;">
-                            <img style="height: 100%; display: block;" src="images/meliodas.jpg" alt="image" />
+                           <div class="image view view-first"  onclick="(window.location='e_commerce.php?id=7')" style="cursor:pointer; display: flex;flex-direction: column ;align-items:center;">
+                            <img style="height: 100%; display: block;" src="images/7.jpg" alt="image" />
                             <div class="mask no-caption">
                               
                             </div>
